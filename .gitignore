@@ -1,4 +1,5 @@
 .DS_store
-.img/*
+img/*
+fonts/*
 npm-debug.log
 node_modules/
