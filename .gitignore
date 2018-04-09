@@ -1,4 +1,5 @@
 .DS_store
+_scratch.html
 img/*
 fonts/*
 npm-debug.log
