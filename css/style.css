@@ -201,8 +201,8 @@ a:hover {
 
 
 .page-header.header-smaller {
-    height: 200px;
-    min-height: 200px;
+    height: 500px;
+    min-height: 500px;
 }
 .page-header.header-smallest {
     height: 200px;
