@@ -174,7 +174,7 @@ a:hover {
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
     box-shadow: none;
-    background-color: #525252;
+    background-color: #787878;
     color: #FFFFFF;
 	 border-radius:5px;
 }
