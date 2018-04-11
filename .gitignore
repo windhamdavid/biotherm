@@ -2,5 +2,6 @@
 _scratch.html
 img/*
 fonts/*
+files/*
 npm-debug.log
 node_modules/
