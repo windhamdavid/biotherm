@@ -80,6 +80,13 @@ a {
 a:hover {
 	color:#16c462;
 }
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+.vertical-text {
+	float: left;
+}
 .no-top-margin {
 	margin-top:0 !important;
 }
