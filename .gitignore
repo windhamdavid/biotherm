@@ -3,7 +3,8 @@ _scratch.html
 img/*
 fonts/*
 files/*
+forms/*
 forms/config.php
-forms/PHPMailer
+forms/PHPMailer/*
 npm-debug.log
 node_modules/
