@@ -220,7 +220,12 @@ footer .copyright {
 .product-card-text {
 	min-height:160px;
 }
-
+.product-card-list {
+	min-height:100px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
 .gallery-feed img {
     width: 20%;
     margin-right: 5%;
