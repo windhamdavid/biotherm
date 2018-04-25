@@ -70,7 +70,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<p class="description">You can contact us with anything related to our services and products. We&apos;ll get in touch with you as soon as possible.<br><br></p>
-				<form role="form" id="contact-form" method="post">
+				<form role="form" id="contact-form" method="post" action="forms/contact-form.php">
 					<div class="form-group">
 						<label for="name" class="bmd-label-floating">Your name</label>
 						<input type="text" class="form-control" id="name">
@@ -92,6 +92,8 @@
 						<input type="submit" class="btn btn-danger btn-raised btn-round" value="Contact Us">
 					</div>
 				</form>
+            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Your message sent successfully!</h3> </div>
+            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 			</div>
 			<div class="col-md-4 ml-auto">
 				<div class="info info-horizontal">
