@@ -70,23 +70,26 @@
 		<div class="row">
 			<div class="col-md-6">
 				<p class="description">You can contact us with anything related to our services and products. We&apos;ll get in touch with you as soon as possible.<br><br></p>
-				<form role="form" id="contact-form" method="post" action="forms/contact-form.php">
+				<form id="contact-form" method="post" action="forms/contact-form.php" role="form">
 					<div class="form-group">
-						<label for="name" class="bmd-label-floating">Your name</label>
-						<input type="text" class="form-control" id="name">
+						<label for="form_name" class="bmd-label-floating">Your name</label>
+						<input id="form_name" type="text" name="name" class="form-control" required="required" data-error="A Name is Required.">
+						<div class="help-block with-errors"></div>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmails">
-						<span class="bmd-help">We'll never share your email with anyone else.</span>
+						<input id="form_email" type="email" class="form-control" required="required" data-error="Valid Email is Required.">
+						<div class="help-block with-errors"></div>
 					</div>
 					<div class="form-group">
-						<label for="phone" class="bmd-label-floating">Phone</label>
-						<input type="text" class="form-control" id="phone">
+						<label for="form_phone" class="bmd-label-floating">Phone</label>
+						<input id="form_phone" type="tel" name="phone" class="form-control" >
+						<div class="help-block with-errors"></div>
 					</div>
 					<div class="form-group label-floating">
 						<label class="form-control-label bmd-label-floating" for="message"> Your message</label>
-						<textarea class="form-control" rows="6" id="message"></textarea>
+						<textarea id="form_message" name="message" class="form-control" rows="6" required="required" data-error="Please Leave As a Message."></textarea>
+						<div class="help-block with-errors"></div>
 					</div>
 					<div class="submit text-center">
 						<input type="submit" class="btn btn-danger btn-raised btn-round" value="Contact Us">
@@ -136,7 +139,7 @@
 					<div class="card-header card-header-image">
 
 					</div>
-					<div class="card-body ">
+					<div class="card-body">
 						<h4 class="card-title">Complimentary No-Obligation Consultation</h4>
 						<h6 class="card-category text-muted"></h6>
 						<p class="card-description">Determine your needs through our user friendly questionnaire or let us do it for you. Our custom software compiles your information and provides a custom engineered solution to meet your performance requirements.</p>
@@ -150,7 +153,7 @@
 					<div class="card-header card-header-image">
 
 					</div>
-					<div class="card-body ">
+					<div class="card-body">
 						<h4 class="card-title">Proposal</h4>
 						<h6 class="card-category text-muted"></h6>
 						<p class="card-description">Our easy-to-read proposal format clearly explains what’s in our system and how it operates. Enjoy unlimited flexibility and choices to determine your needs. Our sales engineers are readily available to answer any question or concerns you may have.</p>
@@ -164,7 +167,7 @@
 					<div class="card-header card-header-image">
 
 					</div>
-					<div class="card-body ">
+					<div class="card-body">
 						<h4 class="card-title">Order &amp; Contract</h4>
 						<h6 class="card-category text-muted"></h6>
 						<p class="card-description">Simple, clear and complete agreement with reasonable payment terms and quick turnaround. Alternative Financing Our grant specialist is readily available to provide guidance on non-traditional financing such as grants and tax rebates that can offset your project. We can assist with the application (additional fee).</p>
@@ -178,7 +181,7 @@
 					<div class="card-header card-header-image">
 
 					</div>
-					<div class="card-body ">
+					<div class="card-body">
 						<h4 class="card-title">Delivery &amp; Support</h4>
 						<h6 class="card-category text-muted"></h6>
 						<p class="card-description">Unlimited technical support for two years from date of purchase. Boilers & boiler loops can be skid mounted. Includes custom CAD drawings of your facility and complete instructions. Need external help? We can recommend experienced greenhouse installers and get a specialist to your site. Replacement parts are readily available and promptly shipped.</p>
@@ -286,5 +289,7 @@
 <script src="js/bootstrap-material-design.min.js"></script>
 <script src="js/material-kit.min.js"></script>
 <script src="js/init.js"></script>
+<script src="js/validator.js"></script>
+<script src="forms/contact.js"></script>
 </body>
 </html>
