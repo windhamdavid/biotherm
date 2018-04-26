@@ -231,66 +231,71 @@
 		<div class="container">
 			<div class="col-md-6">
 				<div class="card card-contact card-raised">
-					<form id="contact-form2" method="post">
-						<div class="card-header card-header-success text-center">
-							<h4 class="card-title">Contact Us</h4>
-						</div>
-						<div class="card-body">
-							<div class="row">
-								<img class="rounded img-raised img-fluid" src="img/biotherm-office-small.jpg" style="width:490px;">
-								<div class="col-md-6">
-									<div class="info-horizontal">
-										<div class="icon icon-danger"><i class="fas fa-phone"></i></div>
-										<div class="description">
-											<h5 class="info-title">Phone</h5>
-											<p> 800-438-4328<br> Mon - Fri, 8:00am - 5:00pm</p>
+					
+					<form id="contact-form" method="post" action="forms/contact.php" role="form">
+						<div class="controls">
+							<div class="card-header card-header-success text-center">
+								<h4 class="card-title">Contact Us</h4>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<img class="rounded img-raised img-fluid" src="img/biotherm-office-small.jpg" style="width:490px;">
+									<div class="col-md-6">
+										<div class="info-horizontal">
+											<div class="icon icon-danger"><i class="fas fa-phone"></i></div>
+											<div class="description">
+												<h5 class="info-title">Phone</h5>
+												<p> 800-438-4328<br> Mon - Fri, 8:00am - 5:00pm</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-horizontal">
+											<div class="icon icon-danger"><i class="fas fa-map-marker-alt"></i></div>
+											<div class="description">
+												<h5 class="info-title">Office</h5>
+												<p> 476 Primero Court<br> Cotati, CA 94931<br> USA</p>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="info-horizontal">
-										<div class="icon icon-danger"><i class="fas fa-map-marker-alt"></i></div>
-										<div class="description">
-											<h5 class="info-title">Office</h5>
-											<p> 476 Primero Court<br> Cotati, CA 94931<br> USA</p>
+								<div class="messages"></div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group label-floating is-empty has-rose">
+											<label for="form_name" class="bmd-label-floating">Name</label>
+											<input id="form_name" type="text" name="name" class="form-control" required="required" data-error="A Name is Required.">
+											<span class="material-input"></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group label-floating is-empty has-rose">
+											<label for="form_email" class="bmd-label-floating">Email address</label>
+											<input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid Email is Required.">
+											<span class="material-input"></span>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group label-floating is-empty has-rose">
-										<label class="bmd-label-floating">Full Name</label>
-										<input type="text" name="email" class="form-control">
-										<span class="material-input"></span>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group label-floating is-empty has-rose">
-										<label class="bmd-label-floating">Email address</label>
-										<input type="email" name="email" class="form-control">
-										<span class="material-input"></span>
-									</div>
+								<div class="form-group label-floating has-rose is-empty">
+									<label for="message" class="bmd-label-floating">Your Message</label>
+									<textarea id="form_message" name="message" class="form-control" rows="6" required="required" data-error="Please Leave Us a Message."></textarea>
+									<span class="material-input"></span>
 								</div>
 							</div>
-							<div class="form-group label-floating has-rose is-empty">
-								<label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-								<textarea name="message" class="form-control" id="exampleMessage" rows="6"></textarea>
-								<span class="material-input"></span>
+							<div class="card-footer justify-content-between">
+								<!---<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value=""> I'm not a robot
+										<span class="form-check-sign">
+											<span class="check"></span>
+										</span>
+									</label>
+								</div>-->
+								<button type="submit" class="btn btn-success pull-right">Send Message</button>
 							</div>
-						</div>
-						<div class="card-footer justify-content-between">
-							<div class="form-check">
-								<label class="form-check-label">
-									<input class="form-check-input" type="checkbox" value=""> I'm not a robot
-									<span class="form-check-sign">
-										<span class="check"></span>
-									</span>
-								</label>
-							</div>
-							<button type="submit" class="btn btn-success pull-right">Send Message</button>
 						</div>
 					</form>
+					
 				</div>
 			</div>
 		</div>
@@ -372,6 +377,8 @@
 <script src="js/instagram.js"></script>
 <script src="js/map.js"></script>
 <script src="js/init.js"></script>
+<script src="js/validator.js"></script>
+<script src="forms/contact.js"></script>
 <script>
 	var feed = new Instafeed({
 			get: 'user',
