@@ -103,6 +103,9 @@ a:hover { color:#16c462; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 
+.navbar .navbar-brand {
+	height:70px;
+}
 .biotherm-heat-icon{
 	fill:#ec2024;
 	color:#ec2024 !important;
