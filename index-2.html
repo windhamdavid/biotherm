@@ -42,6 +42,8 @@
 				</li>
 				<li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-users"></i> About</a></li>
 				<li class="nav-item"><a class="nav-link" href="contact.html"><i class="far fa-envelope"></i> Contact</a></li>
+				<li class="nav-item"><a href="https://www.instagram.com/biothermsolutions/" class="btn btn-just-icon btn-link btn-instagram"><i class="fab fa-instagram"></i></a></li>
+				<li class="nav-item"><a href="https://www.linkedin.com/company/trueleaf-technologies" class="btn btn-just-icon btn-link btn-facebook"><i class="fab fa-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -172,7 +174,7 @@
 
 		 
 <!--     *********    CONTACT     *********      -->
-	<div class="contactus-2">
+	<div id="contactmap" class="contactus-2">
 		<div id="contactUs2Map" class="map"></div>
 		<div class="container section">
 			<div class="col-md-6">
@@ -288,8 +290,6 @@
 				<script>document.write("<n uers='znvygb:vasb@ovbgurezfbyhgvbaf.pbz'>vasb@ovbgurezfbyhgvbaf.pbz</n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>
 				<ul class="social-buttons">
 					<li><a href="https://www.instagram.com/biothermsolutions/" class="btn btn-just-icon btn-link btn-instagram"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="https://www.facebook.com/pg/biothermsolutions/" class="btn btn-just-icon btn-link btn-facebook"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="https://twitter.com/biothermgetheat" class="btn btn-just-icon btn-link btn-twitter"><i class="fab fa-twitter"></i></a></li>
 					<li><a href="https://www.linkedin.com/company/trueleaf-technologies" class="btn btn-just-icon btn-link btn-facebook"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
 		</div>
@@ -316,21 +316,6 @@
 <script src="js/init.js"></script>
 <script src="js/validator.js"></script>
 <script src="forms/contact.js"></script>
-<script>
-	var feed = new Instafeed({
-			get: 'user',
-			userId: 1722845211,
-			accessToken: '1722845211.1677ed0.0dfbcdf73e3f4ca8a9994b28bd709a8a',
-			target: 'instagram',
-			resolution: 'thumbnail',
-			limit: 7,
-			template: '<a target="_blank" href="{{link}}"><img class="instagram card-header-image" src="{{image}}" /></a>'
-	});
-
-	window.onload = function() {
-		feed.run();
-	};
-</script>
 
 </body>
 </html>
