@@ -154,7 +154,10 @@ a:hover { color:#16c462; }
 	font-size:15px;
 	font-weight: 800;
 }
-
+.nav-link-icon {
+	font-size:23px !important;
+	font-weight:normal !important;
+}
 
 .dropdown-menu {
     position: absolute;
