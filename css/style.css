@@ -222,7 +222,17 @@ a:hover { color:#16c462; }
 footer .copyright {
     padding: 45px 0;
 }
-
+.solutions {
+	background:#000;
+	color:#fff !important;
+	border-radius:20px;
+	padding:20px;
+	margin:10px !important;
+}
+.solutions .card-title {
+	color:#fff !important;
+	font-size: 23px;
+}
 .product-card-text {
 	min-height:160px;
 }
