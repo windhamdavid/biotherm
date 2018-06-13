@@ -225,41 +225,40 @@ a:hover { color:#16c462; }
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+	bottom: 230px;
+	z-index: 10;
 }
-
 /* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 42rem;
-  background-color: #fff;
+.main-carousel-item {
+	height: 42rem;
+	background-color: #fff;
 }
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+.main-carousel-item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
 }
-.carousel-item:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.6);
+.main-carousel-item:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,0.5);
 }
-.carousel-filter::before {
-    background: rgba(0, 0, 0, 0.5);
+.main-carousel-filter::before {
+    background: rgba(0, 0, 0, 0.7);
 }
 .carousel-background {
 	background: rgba(0, 0, 0, 0.5);
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .carousel-fade .carousel-item {
  opacity: 0;
@@ -286,8 +285,15 @@ a:hover { color:#16c462; }
  transform: translateX(0);
  transform: translate3d(0, 0, 0);
 }
-
-
+.superbig {
+	font-size:63px;
+}
+.fadeInDownBig {
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	animation-duration: 5s;
+}
 
 
 
