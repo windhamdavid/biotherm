@@ -231,18 +231,13 @@ a:hover { color:#16c462; }
 .carousel-caption {
 	bottom: 230px;
 	z-index: 10;
+
 }
 /* Declare heights because of positioning of img element */
 .main-carousel-item {
 	height: 32rem;
-	background-color: #fff;
 }
-.main-carousel-item > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-}
+
 .main-carousel-item:after {
 	content:"";
 	display:block;
@@ -251,7 +246,7 @@ a:hover { color:#16c462; }
 	bottom:0;
 	left:0;
 	right:0;
-	background:rgba(0,0,0,0.5);
+	
 }
 .main-carousel-filter::before {
     background: rgba(0, 0, 0, 0.7);
