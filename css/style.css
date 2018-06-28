@@ -467,6 +467,7 @@ footer ul li a {
 	.navbar-brand img {
 		padding:0 15px 20px 0;
 		margin: 0 0 0 0px;
+		max-width:220px;
 	}
 	.carousel-caption {
 		bottom: 60px;

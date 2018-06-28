@@ -43,31 +43,86 @@
 </nav>
 
 
-<div class="page-header header-small header-filter" data-parallax="true" style=" background-image: url('img/project_pleasant_view_gardens_nj.jpg'); ">
+<div class="page-header header-smallest header-filter" data-parallax="true">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Contact Us</h2>
-				<h4><b>From initial consultation to installation, BioTherm’s staff is with you every step of the way. Whether through new construction, major upgrades, or retrofits, our systems are durable and efficient—resulting in high success rates and peak crops. You can always depend on BioTherm</b>.</h4>
-			</div>
-		</div>
-		<div class="row header-image-credit">
-			<div class="col-md-4 offset-md-8 text-right">
-				<p>
-					Project: Pleasant View Gardens<br />
-					Whereever, New Jersey<br />
-				</p>
-			</div>
-		</div>
+
 	</div>
 </div>
 
 <div class="main main-raised">
+
+<!--     *********    CONTACT     *********      -->
+	<div id="contactmap" class="contactus-2">
+		<div id="contactUs2Map" class="map"></div>
+		<div class="container section">
+			<div class="col-md-6">
+				<div class="card card-contact card-raised">
+				
+					<form id="contact-form" method="post" action="forms/contact.php" role="form">
+						<div class="controls">
+							<div class="card-header card-header-success text-center">
+								<h4 class="card-title">Contact Us</h4>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<img class="rounded img-raised img-fluid" src="img/biotherm-office-small.jpg" style="width:490px;">
+									<div class="col-md-6">
+										<div class="info-horizontal">
+											<div class="icon icon-danger"><i class="fas fa-phone"></i></div>
+											<div class="description">
+												<h5 class="info-title">Phone</h5>
+												<p> 800-438-4328<br> Mon - Fri, 8:00am - 5:00pm</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-horizontal">
+											<div class="icon icon-danger"><i class="fas fa-map-marker-alt"></i></div>
+											<div class="description">
+												<h5 class="info-title">Office</h5>
+												<p> 476 Primero Court<br> Cotati, CA 94931<br> USA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="messages"></div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group label-floating is-empty has-rose">
+											<label for="form_name" class="bmd-label-floating">Name</label>
+											<input id="form_name" type="text" name="name" class="form-control" required="required" data-error="A Name is Required.">
+											<span class="material-input"></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group label-floating is-empty has-rose">
+											<label for="form_email" class="bmd-label-floating">Email address</label>
+											<input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid Email is Required.">
+											<span class="material-input"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group label-floating has-rose is-empty">
+									<label for="message" class="bmd-label-floating">Your Message</label>
+									<textarea id="form_message" name="message" class="form-control" rows="6" required="required" data-error="Please Leave Us a Message."></textarea>
+									<span class="material-input"></span>
+								</div>
+							</div>
+							<div class="card-footer justify-content-between">
+								<button type="submit" class="btn btn-success pull-right">Send Message</button>
+								<a href="quote.html"><button type="button" class="btn btn-danger"> Request a Quote</button></a>
+							</div>
+						</div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+<!--     *********    END CONTACT      *********      -->
 	
 	
-	
-	
-<div class="contact-content">
+<!--<div class="contact-content">
 	<div class="container section">
 		<div class="row">
 			<div class="col-md-6">
@@ -129,7 +184,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
 	
 	
 <hr>
@@ -296,6 +351,9 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-material-design.min.js"></script>
 <script src="js/material-kit.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ggSZufhKYdFE5PfBcy6aS4xnaX4-O_0"></script>
+<script src="js/instagram.js"></script>
+<script src="js/map.js"></script>
 <script src="js/init.js"></script>
 <script src="js/validator.js"></script>
 <script src="forms/contact.js"></script>
