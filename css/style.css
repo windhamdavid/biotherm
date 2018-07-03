@@ -470,12 +470,15 @@ footer ul li a {
 		max-width:220px;
 	}
 	.carousel-caption {
-		bottom: 60px;
+		bottom: 36px;
 		z-index: 10;
 	}
 	.main-raised {
 		margin: 0px;
 		padding: 0 15px;
+	}
+	h2.front-title {
+		font-size: 1.8rem;
 	}
 	#toob-testimonial-carousel .card {
 		padding:10px 20px;
