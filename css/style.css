@@ -142,6 +142,9 @@ a:hover { color:#16c462; }
 .btn.btn-heat:hover {
     box-shadow: 0 14px 26px -12px rgba(169, 28, 20, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(28, 139, 237, 0.2);
 }
+.bg-heat {
+    background-color: #ed1c24 !important;
+}
 
 .text-info {
     color: #1c8bed !important;
