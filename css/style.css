@@ -474,6 +474,10 @@ footer ul li a {
 		margin: 0 0 0 0px;
 		max-width:220px;
 	}
+	.page-header.header-smallest {
+	    height: 130px;
+	    min-height: 130px;
+	}
 	.carousel-caption {
 		bottom: 36px;
 		z-index: 10;
@@ -489,6 +493,7 @@ footer ul li a {
 		padding:10px 20px;
 		min-height:350px;
 	}
+	
 	
 }
 
