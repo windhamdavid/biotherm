@@ -10,6 +10,14 @@ $(document).ready(function() {
 			nav_img.attr("src","img/biotherm-black-dots.png");
 		}
 	});
+	
+	if (window.location.hash) {
+	var hash = window.location.hash;
+		$('html, body').animate({
+			scrollTop :  $(hash).offset().top
+		}, 500);
+	};
+	
 });
 
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
