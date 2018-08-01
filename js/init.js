@@ -25,6 +25,23 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	$(this).ekkoLightbox();
 });
 
+$(function() {
+	$("img.lazy").lazyload();
+});
+
+$('.imageHoverLoad').mouseenter(function() {
+	var elem = $(this);
+	elem.fadeOut(400).promise().done(function() {
+		elem.attr('src', elem.attr('data-hover')).fadeIn(400);
+	});
+});
+
+$('.imageHoverLoad').mouseleave(function() {
+	var elem = $(this);
+	elem.fadeOut(400).promise().done(function() {
+		elem.attr('src', elem.attr('data-original')).fadeIn(400);
+	});
+});
 
 $('#front-carousel').carousel({
     interval: 8000
