@@ -1,0 +1,2 @@
+Action php-cgi /cgi-bin/php56
+AddHandler php-cgi .php 
